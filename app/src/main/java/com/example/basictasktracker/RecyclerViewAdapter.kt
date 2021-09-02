@@ -34,11 +34,7 @@ class RecyclerViewAdapter (private val listOfItems:List<Any>):
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = listOfItems.get(position)
         holder.textView.text=item.toString()
-        holder.star.setOnClickListener {
-            Toast.makeText(holder.itemView.context,
-                "Clicked on star: " + (position + 1), Toast.LENGTH_SHORT).show()
 
-        }
     }
 
     //  Tells RecyclerView how many items it needs to lay out
@@ -51,6 +47,5 @@ class RecyclerViewAdapter (private val listOfItems:List<Any>):
         val textView =
             itemView.findViewById<TextView>(R.id.textView)
 
-        val star = itemView.findViewById<ImageView>(R.id.star)
     }
 }

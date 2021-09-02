@@ -1,0 +1,2 @@
+rootProject.name = "BasicTaskTracker"
+include ':app'
